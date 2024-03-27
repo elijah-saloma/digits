@@ -54,7 +54,7 @@ const ListContacts = () => {
             <h2>List Contacts</h2>
           </Col>
           <Row xs={1} md={2} lg={3} className="g-5">
-            {contacts.map((contact, index) => (<Col key={index}><Contact contact={contact}/></Col>))}
+            {contacts.map((contact, index) => (<Col key={index}><Contact contact={contact} /></Col>))}
           </Row>
         </Col>
       </Row>

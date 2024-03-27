@@ -8,7 +8,7 @@ const Contact = ({ contact }) => (
     <Card.Header>
       <Image src={contact.image} width={75} />
       <Card.Title>{contact.firstName} {contact.lastName}</Card.Title>
-      <Card.Subtitle>{contact.address}</Card.Subtitle>
+      <Card.Subtitle>{ contact.address }</Card.Subtitle>
     </Card.Header>
     <Card.Body>
       <Card.Text>{contact.description}</Card.Text>
@@ -24,11 +24,6 @@ Contact.propTypes = {
     address: PropTypes.string,
     image: PropTypes.string,
     description: PropTypes.string,
-
-    /*
-    _id: PropTypes.string,
-     */
-
   }).isRequired,
 };
 
