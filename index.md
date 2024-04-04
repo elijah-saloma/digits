@@ -1,4 +1,4 @@
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing-page.png)
+<img src="doc/serraon.png">
 
 meteor-application-template-react is a sample Meteor 2.9 application that illustrates: 
 
@@ -11,7 +11,7 @@ meteor-application-template-react is a sample Meteor 2.9 application that illust
   * Alerts regarding success or failure of DB updates using [Sweet Alert](https://sweetalert.js.org/).
   * Quality assurance using [ESLint](http://eslint.org) with packages to partially enforce the [Meteor Coding Standards](https://guide.meteor.com/code-style.html) and the [AirBnB Javascript Style Guide](https://github.com/airbnb/javascript).
 
-The goal of this template is to help you get quickly started doing Meteor development by providing a reasonable directory structure for development and deployment, a set of common extensions to the core framework, and boilerplate code to implement basic page display, navigation, forms, roles, and collection manipulation.
+The goal of this template is to show you a product of the software engineering skills I have practiced in the past several weeks in my ICS314 software engineering course.
 
 To keep this codebase simple and small, some important capabilities are intentionally excluded from this template:
 
@@ -25,11 +25,9 @@ Examples of the these capabilities will be provided elsewhere.
 
 First, [install Meteor](https://www.meteor.com/install).
 
-Second, go to [https://github.com/ics-software-engineering/meteor-application-template-react](https://github.com/ics-software-engineering/meteor-application-template-react), and click the "Use this template" button. Complete the dialog box to create a new repository that you own that is initialized with this template's files.
+Second, clone elijah-saloma's digit repository and click the "Clone or download" button to... download your new GitHub repo to your local file system.  Using [GitHub Desktop](https://desktop.github.com/) is a great choice if you use MacOS or Windows.
 
-Third, go to your newly created repository, and click the "Clone or download" button to download your new GitHub repo to your local file system.  Using [GitHub Desktop](https://desktop.github.com/) is a great choice if you use MacOS or Windows.
-
-Fourth, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
+Third, cd into the app/ directory of your local copy of the repo, and install third party libraries with:
 
 ```
 $ meteor npm install
@@ -43,32 +41,7 @@ Once the libraries are installed, you can run the application by invoking the "s
 $ meteor npm run start
 ```
 
-The first time you run the app, it will create some default users and data. Here is the output:
-
-```
- meteor npm run start 
-
-> meteor-application-template-react@ start /Users/carletonmoore/GitHub/ICS314/meteor-application-template-react/app
-> meteor --no-release-check --exclude-archs web.browser.legacy,web.cordova --settings ../config/settings.development.json
-
-[[[[[ ~/GitHub/ICS314/meteor-application-template-react/app ]]]]]
-
-=> Started proxy.                             
-=> Started HMR server.                        
-=> Started MongoDB.                           
-I20220529-12:09:18.384(-10)? Creating the default user(s)
-I20220529-12:09:18.389(-10)?   Creating user admin@foo.com.
-I20220529-12:09:18.453(-10)?   Creating user john@foo.com.
-I20220529-12:09:18.515(-10)? Creating default data.
-I20220529-12:09:18.515(-10)?   Adding: Basket (john@foo.com)
-I20220529-12:09:18.599(-10)?   Adding: Bicycle (john@foo.com)
-I20220529-12:09:18.600(-10)?   Adding: Banana (admin@foo.com)
-I20220529-12:09:18.601(-10)?   Adding: Boogie Board (admin@foo.com)
-I20220529-12:09:18.773(-10)? Monti APM: completed instrumenting the app
-=> Started your app.
-
-=> App running at: http://localhost:3000/
-```
+The first time you run the app, it will create some default users and data. 
 
 Periodically, you might see `Error starting Mongo (2 tries left): Cannot run replSetReconfig because the node is currently updating its configuration` after the `=> Started HMR server.`. It doesn't seem to be a problem since the MongoDB does start.
 
@@ -149,7 +122,8 @@ By default, each user only sees the Stuff that they have created.  However, the 
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing-page.png)
+<img src="doc/serraon.png">
+
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
@@ -157,54 +131,54 @@ The next step is to use the Login menu to either Login to an existing account or
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/signin-page.png)
+<img src="doc/serraon2.png">
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/register-page.png)
+<img src="doc/serraon3.png">
 
 
 #### Landing (after Login) page, non-Admin user
 
 Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/landing-after-login-page.png)
+<img src="doc/serraon4.png">
 
-You can now add new Stuff documents, and list the Stuff you have created. Note you cannot see any Stuff created by other users.
+You can now add new Contacts documents, and list the Contacts you have created. Note you cannot see any Contacts created by other users.
 
-#### Add Stuff page
+#### Add Contacts page
 
-After logging in, here is the page that allows you to add new Stuff:
+After logging in, here is the page that allows you to add new Contacts:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/add-stuff-page.png)
+<img src="doc/serraon5.png">
 
-#### List Stuff page
+#### List Contacts page
 
-After logging in, here is the page that allows you to list all the Stuff you have created:
+After logging in, here is the page that allows you to list all the Contacts you have created:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/list-stuff-page.png)
+<img src="doc/serraon6.png">
 
-You click the "Edit" link to go to the Edit Stuff page, shown next.
+You click the "Edit" link to go to the Edit Contacts page, shown next.
 
-#### Edit Stuff page
+#### Edit Contacts page
 
 After clicking on the "Edit" link associated with an item, this page displays that allows you to change and save it:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/edit-stuff-page.png)
+<img src="doc/serraon7.png">
 
 #### Landing (after Login), Admin user
 
 You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/admin-landing-page.png)
+<img src="doc/serraon8.png">
 
 #### Admin page (list all users stuff)
 
 To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Stuff by all of the users:
 
-![](https://github.com/ics-software-engineering/meteor-application-template-react/raw/main/doc/admin-list-stuff-page.png)
+<img src="doc/serraon9.png">
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
@@ -212,9 +186,9 @@ Note that non-admin users cannot get to this page, even if they type in the URL 
 
 The application implements a single Collection called "Stuffs". Each Stuffs document has the following fields: name, quantity, condition, and username.
 
-The Stuffs collection is defined in [imports/api/stuff/stuff.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/imports/api/stuff/stuff.js).
+The Contacts collection is defined in [imports/api/contact/Contacts.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/imports/api/stuff/stuff.js).
 
-The Stuffs collection is initialized in [imports/startup/server/Mongo.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/imports/startup/server/Mongo.js).
+The Contacts collection is initialized in [imports/startup/server/Mongo.js](https://github.com/ics-software-engineering/meteor-application-template-react/blob/main/app/imports/startup/server/Mongo.js).
 
 ### CSS
 
